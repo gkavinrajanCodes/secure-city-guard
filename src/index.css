@@ -2,65 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Police/Tourism Department Dashboard Design System - Professional Dark Theme */
+/* Police/Tourism Department Dashboard Design System - Professional Light Theme */
 
 @layer base {
   :root {
-    /* Core Government/Police Theme */
-    --background: 215 25% 8%;
-    --foreground: 210 40% 98%;
+    /* Core Government/Police Theme - Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 215 25% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
 
     /* Police Blue Primary */
-    --primary: 214 78% 35%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 214 78% 45%;
+    --primary-foreground: 0 0% 100%;
 
     /* Secondary Command */
-    --secondary: 215 25% 18%;
-    --secondary-foreground: 210 40% 90%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 25% 15%;
 
     /* Muted Interface */
-    --muted: 215 25% 15%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 15% 45%;
 
     /* Alert Amber */
-    --accent: 45 93% 47%;
-    --accent-foreground: 215 25% 8%;
+    --accent: 45 93% 55%;
+    --accent-foreground: 0 0% 100%;
 
     /* Emergency Red */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Success Green */
     --success: 142 71% 45%;
-    --success-foreground: 210 40% 98%;
+    --success-foreground: 0 0% 100%;
 
     /* Warning Orange */
     --warning: 38 92% 50%;
-    --warning-foreground: 215 25% 8%;
+    --warning-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 215 25% 20%;
-    --input: 215 25% 15%;
-    --ring: 214 78% 35%;
+    --border: 214 31% 91%;
+    --input: 214 31% 91%;
+    --ring: 214 78% 45%;
 
     --radius: 0.5rem;
 
-    /* Professional Gradients */
-    --gradient-command: linear-gradient(135deg, hsl(var(--primary)), hsl(214 78% 25%));
-    --gradient-alert: linear-gradient(135deg, hsl(var(--accent)), hsl(45 93% 35%));
-    --gradient-emergency: linear-gradient(135deg, hsl(var(--destructive)), hsl(0 84% 45%));
-    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 71% 35%));
+    /* Professional Gradients - Light Mode */
+    --gradient-command: linear-gradient(135deg, hsl(var(--primary)), hsl(214 78% 55%));
+    --gradient-alert: linear-gradient(135deg, hsl(var(--accent)), hsl(45 93% 45%));
+    --gradient-emergency: linear-gradient(135deg, hsl(var(--destructive)), hsl(0 84% 50%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 71% 55%));
 
-    /* Professional Shadows */
-    --shadow-command: 0 10px 25px -5px hsl(var(--primary) / 0.3);
-    --shadow-elevated: 0 20px 40px -10px hsl(215 25% 5% / 0.5);
-    --shadow-alert: 0 0 20px hsl(var(--accent) / 0.4);
+    /* Professional Shadows - Light Mode */
+    --shadow-command: 0 8px 25px -5px hsl(var(--primary) / 0.15);
+    --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.1);
+    --shadow-alert: 0 0 20px hsl(var(--accent) / 0.2);
 
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

@@ -35,7 +35,7 @@ export function TouristIdVerification() {
   };
 
   return (
-    <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+    <Card className="bg-card border-border shadow-sm">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Shield className="h-5 w-5 text-primary" />
@@ -59,7 +59,7 @@ export function TouristIdVerification() {
         </div>
 
         {verificationResult && (
-          <div className="space-y-3 p-4 bg-muted/10 rounded-lg">
+          <div className="space-y-3 p-4 bg-muted/50 rounded-lg border border-border/50">
             <div className="flex items-center justify-between">
               <h3 className="font-medium text-foreground">{verificationResult.name}</h3>
               <div className="flex items-center gap-2">

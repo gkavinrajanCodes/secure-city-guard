@@ -62,7 +62,7 @@ export function EFIRGenerator() {
 
   return (
     <div className="space-y-4">
-      <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+      <Card className="bg-card border-border shadow-sm">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Plus className="h-5 w-5 text-primary" />
@@ -120,7 +120,7 @@ export function EFIRGenerator() {
         </CardContent>
       </Card>
 
-      <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+      <Card className="bg-card border-border shadow-sm">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <FileText className="h-5 w-5" />
@@ -129,7 +129,7 @@ export function EFIRGenerator() {
         </CardHeader>
         <CardContent className="space-y-3">
           {recentReports.map((report, index) => (
-            <div key={index} className="p-3 bg-muted/10 rounded-lg">
+            <div key={index} className="p-3 bg-muted/50 rounded-lg border border-border/50">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-medium text-foreground">{report.id}</span>
                 <div className="flex gap-2">

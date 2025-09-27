@@ -57,7 +57,7 @@ export function MetricsGrid() {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 p-4">
       {metrics.map((metric, index) => (
-        <Card key={index} className="bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300">
+        <Card key={index} className="bg-card border-border hover:shadow-lg transition-all duration-300">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground flex items-center gap-2">
               <metric.icon className="h-4 w-4" />

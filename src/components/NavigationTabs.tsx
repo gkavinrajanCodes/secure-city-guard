@@ -24,9 +24,9 @@ export function NavigationTabs({ activeTab, onTabChange }: NavigationTabsProps) 
   ];
 
   return (
-    <div className="bg-card/50 backdrop-blur-md border-b border-border/50 p-2">
+    <div className="bg-card border-b border-border shadow-sm p-2">
       <Tabs value={activeTab} onValueChange={onTabChange} className="w-full">
-        <TabsList className="grid w-full grid-cols-6 bg-muted/20">
+        <TabsList className="grid w-full grid-cols-6 bg-muted/50">
           {tabs.map((tab) => (
             <TabsTrigger 
               key={tab.id} 

@@ -33,7 +33,7 @@ export function DashboardHeader({ userRole, userName, activeAlerts }: DashboardH
   };
 
   return (
-    <header className="bg-card/50 backdrop-blur-md border-b border-border/50 p-4">
+    <header className="bg-card border-b border-border shadow-sm p-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">

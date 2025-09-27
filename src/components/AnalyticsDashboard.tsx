@@ -47,7 +47,7 @@ export function AnalyticsDashboard() {
 
   return (
     <div className="space-y-4">
-      <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+      <Card className="bg-card border-border shadow-sm">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <BarChart3 className="h-5 w-5 text-primary" />
@@ -57,7 +57,7 @@ export function AnalyticsDashboard() {
         <CardContent>
           <div className="grid grid-cols-7 gap-2 mb-4">
             {weeklyStats.map((stat, index) => (
-              <div key={index} className="text-center p-2 bg-muted/10 rounded">
+              <div key={index} className="text-center p-2 bg-muted/50 rounded border border-border/50">
                 <p className="text-xs font-medium text-foreground">{stat.day}</p>
                 <p className="text-sm text-primary font-bold">{stat.tourists}</p>
                 <p className="text-xs text-muted-foreground">{stat.incidents} incidents</p>
@@ -67,7 +67,7 @@ export function AnalyticsDashboard() {
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {performanceMetrics.map((metric, index) => (
-              <div key={index} className="p-3 bg-muted/10 rounded-lg">
+              <div key={index} className="p-3 bg-muted/50 rounded-lg border border-border/50">
                 <p className="text-xs text-muted-foreground">{metric.metric}</p>
                 <p className="text-lg font-bold text-foreground">{metric.value}</p>
                 <div className="flex items-center gap-1 mt-1">
@@ -86,7 +86,7 @@ export function AnalyticsDashboard() {
         </CardContent>
       </Card>
 
-      <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+      <Card className="bg-card border-border shadow-sm">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Activity className="h-5 w-5 text-primary" />
@@ -95,7 +95,7 @@ export function AnalyticsDashboard() {
         </CardHeader>
         <CardContent className="space-y-3">
           {hotspotAnalysis.map((hotspot, index) => (
-            <div key={index} className="flex items-center justify-between p-3 bg-muted/10 rounded-lg">
+            <div key={index} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg border border-border/50">
               <div className="flex items-center gap-3">
                 <div>
                   <p className="font-medium text-foreground">{hotspot.location}</p>

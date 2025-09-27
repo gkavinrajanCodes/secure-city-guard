@@ -66,7 +66,7 @@ export function CommunicationCenter() {
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+        <Card className="bg-card border-border shadow-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Users className="h-5 w-5 text-primary" />
@@ -75,7 +75,7 @@ export function CommunicationCenter() {
           </CardHeader>
           <CardContent className="space-y-3">
             {activeUnits.map((unit, index) => (
-              <div key={index} className="flex items-center justify-between p-3 bg-muted/10 rounded-lg">
+              <div key={index} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg border border-border/50">
                 <div className="flex items-center gap-3">
                   <Avatar className="h-8 w-8">
                     <AvatarFallback className="bg-primary/20 text-primary text-xs">
@@ -106,7 +106,7 @@ export function CommunicationCenter() {
           </CardContent>
         </Card>
 
-        <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+        <Card className="bg-card border-border shadow-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <MessageSquare className="h-5 w-5 text-primary" />
@@ -116,7 +116,7 @@ export function CommunicationCenter() {
           <CardContent className="space-y-3">
             <div className="space-y-2 max-h-48 overflow-y-auto">
               {recentMessages.map((msg, index) => (
-                <div key={index} className={`p-3 bg-muted/10 rounded-lg border-l-2 ${getPriorityBorder(msg.priority)}`}>
+                <div key={index} className={`p-3 bg-muted/50 rounded-lg border border-border/50 border-l-2 ${getPriorityBorder(msg.priority)}`}>
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-medium text-sm text-foreground">{msg.from}</span>
                     <span className="text-xs text-muted-foreground">{msg.time}</span>

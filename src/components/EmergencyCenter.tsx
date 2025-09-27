@@ -53,7 +53,7 @@ export function EmergencyCenter() {
   };
 
   return (
-    <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+    <Card className="bg-card border-border shadow-sm">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center gap-2">
@@ -68,7 +68,7 @@ export function EmergencyCenter() {
       </CardHeader>
       <CardContent className="space-y-3">
         {emergencies.map((emergency, index) => (
-          <div key={index} className="p-3 bg-muted/10 rounded-lg space-y-2">
+          <div key={index} className="p-3 bg-muted/50 rounded-lg border border-border/50 space-y-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Badge variant="outline" className={getStatusColor(emergency.status)}>
