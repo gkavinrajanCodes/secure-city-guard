@@ -2,69 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Police/Tourism Department Dashboard Design System - Professional Light Theme */
+/* Police/Tourism Department Dashboard Design System - Peige/Beige & Light Blue Theme */
 
 @layer base {
   :root {
-    /* Core Government/Police Theme - Light Mode */
-    --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    /* Peige/Beige and Light Blue Theme - Light Mode */
+    --background: 45 20% 98%;
+    --foreground: 215 25% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 215 25% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 215 25% 20%;
 
-    /* Police Blue Primary */
-    --primary: 214 78% 45%;
+    /* Light Blue Primary */
+    --primary: 200 85% 60%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary Command */
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 215 25% 15%;
+    /* Beige Secondary */
+    --secondary: 45 30% 95%;
+    --secondary-foreground: 215 25% 20%;
 
-    /* Muted Interface */
-    --muted: 210 40% 96%;
+    /* Soft Muted Interface */
+    --muted: 45 20% 92%;
     --muted-foreground: 215 15% 45%;
 
-    /* Alert Amber */
-    --accent: 45 93% 55%;
+    /* Soft Amber Accent */
+    --accent: 35 85% 55%;
     --accent-foreground: 0 0% 100%;
 
-    /* Emergency Red */
-    --destructive: 0 84% 60%;
+    /* Soft Red for Emergency */
+    --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Success Green */
-    --success: 142 71% 45%;
+    /* Soft Green for Success */
+    --success: 120 50% 45%;
     --success-foreground: 0 0% 100%;
 
-    /* Warning Orange */
-    --warning: 38 92% 50%;
+    /* Soft Orange for Warning */
+    --warning: 25 85% 50%;
     --warning-foreground: 0 0% 100%;
 
-    /* Borders & Inputs */
-    --border: 214 31% 91%;
-    --input: 214 31% 91%;
-    --ring: 214 78% 45%;
+    /* Soft Borders & Inputs */
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 200 85% 60%;
 
     --radius: 0.5rem;
 
-    /* Professional Gradients - Light Mode */
-    --gradient-command: linear-gradient(135deg, hsl(var(--primary)), hsl(214 78% 55%));
-    --gradient-alert: linear-gradient(135deg, hsl(var(--accent)), hsl(45 93% 45%));
-    --gradient-emergency: linear-gradient(135deg, hsl(var(--destructive)), hsl(0 84% 50%));
-    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 71% 55%));
+    /* Soft Gradients - Light Mode */
+    --gradient-command: linear-gradient(135deg, hsl(var(--primary)), hsl(200 85% 70%));
+    --gradient-alert: linear-gradient(135deg, hsl(var(--accent)), hsl(35 85% 65%));
+    --gradient-emergency: linear-gradient(135deg, hsl(var(--destructive)), hsl(0 70% 60%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(120 50% 55%));
 
-    /* Professional Shadows - Light Mode */
-    --shadow-command: 0 8px 25px -5px hsl(var(--primary) / 0.15);
-    --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.1);
-    --shadow-alert: 0 0 20px hsl(var(--accent) / 0.2);
+    /* Soft Shadows - Light Mode */
+    --shadow-command: 0 8px 25px -5px hsl(var(--primary) / 0.12);
+    --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.06);
+    --shadow-alert: 0 0 20px hsl(var(--accent) / 0.15);
 
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Peige/Beige and Light Blue Theme - Soft Professional */
+    --background: 45 20% 95%;
+    --foreground: 215 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 20%;
+
+    /* Light Blue Primary */
+    --primary: 200 85% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Beige Secondary */
+    --secondary: 45 30% 92%;
+    --secondary-foreground: 215 25% 20%;
+
+    /* Soft Muted Interface */
+    --muted: 45 20% 90%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Soft Amber Accent */
+    --accent: 35 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Soft Red for Emergency */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Soft Green for Success */
+    --success: 120 50% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Soft Orange for Warning */
+    --warning: 25 85% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Soft Borders & Inputs */
+    --border: 45 20% 85%;
+    --input: 45 20% 85%;
+    --ring: 200 85% 65%;
+
+    /* Soft Gradients */
+    --gradient-command: linear-gradient(135deg, hsl(var(--primary)), hsl(200 85% 75%));
+    --gradient-alert: linear-gradient(135deg, hsl(var(--accent)), hsl(35 85% 70%));
+    --gradient-emergency: linear-gradient(135deg, hsl(var(--destructive)), hsl(0 70% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(120 50% 60%));
+
+    /* Soft Shadows */
+    --shadow-command: 0 8px 25px -5px hsl(var(--primary) / 0.15);
+    --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.08);
+    --shadow-alert: 0 0 20px hsl(var(--accent) / 0.2);
   }
 }
 
